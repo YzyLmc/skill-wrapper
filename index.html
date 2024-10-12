@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents">
+  <meta property="og:title" content="Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents"/>
+  <meta property="og:description" content=" A safety module for LLM-driven robot agents that allows encoding safety constraint in natural language, pruning unsafe actions, and assisting the agents to re-generate the plan."/>
+  <meta property="og:url" content="https://github.com/YzyLmc/ltl_safety"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/icon.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/image/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="safety chip, formal verification for LLMs, natural language to temporal logic grounding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yzylmc.github.io/" target="_blank">Ziyi Yang,</span>
+                <span class="author-block">
+                  <a href="https://shreyasraman.netlify.app/" target="_blank">Shreyas S. Raman,</span>
+                  <span class="author-block">
+                    <a href="http://people.csail.mit.edu/ajshah/" target="_blank">Ankit Shah,</a>
+                    <span class="author-block">
+                      <a href="https://h2r.cs.brown.edu/people/" target="_blank">Stefanie Tellex</a>
+                    </span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Department of Computer Science, Brown University<br>ICRA 2024 | LangRob @ CoRL</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2309.09919.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YzyLmc/ltl_safety" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2309.09919" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/safety_chip_1080.mp4"
+        type="video/mp4"> -->
+      <!-- </video> -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    <!-- </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Recent advancements in large language models (LLMs) have enabled a new research domain, LLM agents, for solving robotics and planning tasks by leveraging the world knowledge and general reasoning abilities of LLMs obtained during pretraining. However, while considerable effort has been made to teach the robot the "dos," the "don'ts" received relatively less attention. 
+          We argue that, for any practical usage, it is as crucial to teach the robot the "don'ts": conveying explicit instructions about prohibited actions, assessing the robot's comprehension of these restrictions, and, most importantly, ensuring compliance. 
+          Moreover, verifiable safe operation is essential for deployments that satisfy worldwide standards such as ISO 61508, which defines standards for safely deploying robots in industrial factory environments worldwide. 
+          <br><br>Aiming at deploying the LLM agents in a collaborative environment, we propose a queryable safety constraint module based on linear temporal logic (LTL) that simultaneously enables natural language (NL) to temporal constraints encoding, safety violation reasoning and explaining, and unsafe action pruning. To demonstrate the effectiveness of our system, we conducted experiments in VirtualHome environment and on a real robot. 
+          The experimental results show that our system strictly adheres to the safety constraints and scales well with complex safety constraints, highlighting its potential for practical utility.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Overview</h2>
+      <p>
+        Demonstration of safety chip's functionality of translating NL to LTL formulas, monitoring the agent's decision-making process, and reprompting
+        with reason of violation for re-planning.
+      </p>
+      <img src="static/images/demo.png" height="80%">
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">System</h2>
+      <p>
+        Our system consists of a translator system for NL to LTL translation, a query system for explaining
+        safety violations, and a constraint monitor system for validating and pruning actions generated by the LLM agent. The
+        automaton serves as the central part of the safety constraints
+        module: it represents the safety constraints encoded from the
+        LTL formula in a validatable form, reasons the violation of
+        constraints with state changes of propositions, and validates
+        the agent's proposed action by progressing the propositionlevel trajectory. In addition, the output of the query system
+        is also used to assist the agent in performing re-planning.
+      </p>
+      <img src="static/images/LTL_safety_system_icra.png" height="80%">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container is-max-desktop">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">NL to LTL translation</h2>
+      <p>
+        We adopted the modular
+        framework of <a href="https://arxiv.org/abs/2302.11649v2" taget="_blank">Lang2LTL</a> as NL to domain-specific
+        LTL formula translator using a predefined vocabulary. This
+        involves extracting referring expressions, grounding referring
+        expressions to propositions within the vocabulary, translating
+        lifted utterances to formulas, and finally producing grounded formulas by replacing placeholders with grounded propositions.
+        The
+        noteworthy distinction is that our translation module relies
+        solely on in-context learning and necessitates no fine-tuning
+        due to the compositionality nature of our approach: the safety
+        constraints are assumed to be provided as a series of basic
+        segments.
+      </p>
+      <img src="static/images/lang2ltl.png" height="100" width="auto">
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container is-max-desktop">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Results</h2>
+      <p>
+        Safety Chip could achieve
+        100% safety rate with expert-verified LTL formulas in
+        both experiments, which significantly outperformed the other
+        baselines, especially under a larger number of constraints.
+        Besides, even without expert verification, there is still a large
+        margin over the other baselines, though the success rate
+        is affected because of the mistranslated safety constraints.
+        On the contrary, the NL Constraints baseline struggles to
+        adhere to the safety constraint even with expert-provided NL
+        constraints.
+      </p>
+      <img src="static/images/vh_result.png" height="80%">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Robot Demo</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <p>
+            We deploy the baseline LLM agent with safety chip plugged in on a quadruped robot, and build an indoor environment consisting of 23 objects
+            and landmarks, and the environmental information is stored
+            in the scanned graph from the Spot robot. We define two
+            mobile manipulation tasks with up to ten safety constraints for each, and we progressively increase
+            the number of constraints applied to the task.
+          </p>
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <video poster="" id="tree" autoplay controls muted loop height="100%">
+              <!-- Your video here -->
+              <source src="static/videos/safety_chip_1080.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/Safety_Chip_Poster_langrob.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @misc{yang2023plug,
+            title={Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents}, 
+            author={Ziyi Yang and Shreyas S. Raman and Ankit Shah and Stefanie Tellex},
+            year={2023},
+            eprint={2309.09919},
+            archivePrefix={arXiv},
+            primaryClass={cs.RO}
+            }
+    </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
