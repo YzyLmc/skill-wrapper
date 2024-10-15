@@ -62,17 +62,17 @@
                   <span class="author-block">
                     <a>Benned Hedegaard,</a>
                     <span class="author-block">
-                      <a href="https://h2r.cs.brown.edu/people/" target="_blank">Stefanie Tellex</a>
+                      <a href="https://h2r.cs.brown.edu/people/" target="_blank">Stefanie Tellex,</a>
                       <span class="author-block">
-                        <a href="https://h2r.cs.brown.edu/people/" target="_blank">David Paulius</a>
+                        <a href="https://davidpaulius.github.io/" target="_blank">David Paulius,</a>
                         <span class="author-block">
-                          <a href="https://h2r.cs.brown.edu/people/" target="_blank">Naman Shah</a>
+                          <a href="https://www.namanshah.net/" target="_blank">Naman Shah</a>
                     </span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Department of Computer Science, Brown University<br>ICRA 2024 | LangRob @ CoRL</span>
+                    <span class="author-block">Department of Computer Science, Brown University<br></span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -102,7 +102,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YzyLmc/ltl_safety" target="_blank"
+                    <a href="https://github.com/YzyLmc/skill_wrapper" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -112,7 +112,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/2309.09919" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -120,7 +120,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -155,11 +155,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Recent advancements in large language models (LLMs) have enabled a new research domain, LLM agents, for solving robotics and planning tasks by leveraging the world knowledge and general reasoning abilities of LLMs obtained during pretraining. However, while considerable effort has been made to teach the robot the "dos," the "don'ts" received relatively less attention. 
-          We argue that, for any practical usage, it is as crucial to teach the robot the "don'ts": conveying explicit instructions about prohibited actions, assessing the robot's comprehension of these restrictions, and, most importantly, ensuring compliance. 
-          Moreover, verifiable safe operation is essential for deployments that satisfy worldwide standards such as ISO 61508, which defines standards for safely deploying robots in industrial factory environments worldwide. 
-          <br><br>Aiming at deploying the LLM agents in a collaborative environment, we propose a queryable safety constraint module based on linear temporal logic (LTL) that simultaneously enables natural language (NL) to temporal constraints encoding, safety violation reasoning and explaining, and unsafe action pruning. To demonstrate the effectiveness of our system, we conducted experiments in VirtualHome environment and on a real robot. 
-          The experimental results show that our system strictly adheres to the safety constraints and scales well with complex safety constraints, highlighting its potential for practical utility.          </p>
+          We envision a future where robots will be equipped “out of the box” with composable and portable skills. However, the conditions in which these skills will successfully execute are not formalized in a way that lets robots autonomously compose skills, posing difficulties for robot programmers who operate such robots. Abstractions are a key requirement to enable robots to perform complex tasks. Often, domain experts hand-craft these abstractions, introducing bias from human intuition. Alternatively, computational approaches can be used to invent abstractions autonomously, but human programmers or end users may not be able to interpret the resulting abstractions. We present an approach for autonomously learning natural-language-interpretable abstractions. Our novel method learns symbolic representations for black-box robot skills, such as GoTo and PickUp, from a high-dimensional and unstructured input in the form of 2D images. Specifically, we use foundation models to propose exploratory sequences of skill executions, to invent symbolic predicates that disambiguate low-level state transitions, and to classify when said predicates hold in a given state. We present preliminary results in a simulated setting, demonstrating the feasibility of our method.
+          </p>
         </div>
       </div>
     </div>
@@ -213,10 +210,9 @@
       <div class="content">
         <h2 class="title is-3">Overview</h2>
       <p>
-        Demonstration of safety chip's functionality of translating NL to LTL formulas, monitoring the agent's decision-making process, and reprompting
-        with reason of violation for re-planning.
+        Demonstration of SkillWrapper's functionality.
       </p>
-      <img src="static/images/demo.png" height="80%">
+      <img src="static/images/fig-skillwrapper_overview.pdf" height="80%">
       </div>
     </div>
   </div>
