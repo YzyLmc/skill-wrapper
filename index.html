@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="SkillWrapper: Autonomously Learning Interpretable Skill Abstractions with Foundation Models">
-  <meta property="og:title" content="SkillWrapper: Autonomously Learning Interpretable Skill Abstractions with Foundation Models"/>
+  <meta name="description" content="SkillWrapper: Generative Predicate Invention for Task-level Planning">
+  <meta property="og:title" content="SkillWrapper: Generative Predicate Invention for Task-level Planning"/>
   <meta property="og:description" content=""/>
   <meta property="og:url" content="https://github.com/YzyLmc/skill-wrapper"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>SkillWrapper: Autonomously Learning Interpretable Skill Abstractions with Foundation Models</title>
+  <title>SkillWrapper: Generative Predicate Invention for Task-level Planning</title>
   <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -51,52 +51,49 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SkillWrapper: Autonomously Learning Interpretable Skill Abstractions with Foundation Models</h1>
+            <h1 class="title is-1 publication-title">SkillWrapper: Generative Predicate Invention for Task-level Planning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span>
                 <span class="author-block">
-                  <a href="https://yzylmc.github.io/" target="_blank">Ziyi Yang,</a>
+                  <a href="https://yzylmc.github.io/" target="_blank">Ziyi Yang<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://www.linkedin.com/in/bennedhedegaard" target="_blank">Benned Hedegaard,</a>
+                  <a href="https://www.linkedin.com/in/bennedhedegaard" target="_blank">Benned Hedegaard<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://www.ajaafar.com" target="_blank">Ahmed Jaafar,</a>
+                  <a href="https://www.ajaafar.com" target="_blank">Ahmed Jaafar<sup>*</sup><sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=KdcjezcAAAAJ&hl=en" target="_blank">Skye Thompson,</a>
+                  <a href="https://weiyichen.me/" target="_blank">Yichen Wei<sup>*</sup><sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://weiyichen.me/" target="_blank">Yichen Wei,</a>
+                  <a href="https://scholar.google.com/citations?user=KdcjezcAAAAJ&hl=en" target="_blank">Skye Thompson<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://www.everestyang.com" target="_blank">Everest Yang,</a>
+                  <a href="https://shreyasraman.netlify.app/" target="_blank">Shreyas S. Raman<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://haotianfu.me/" target="_blank">Haotian Fu,</a>
+                  <a href="https://haotianfu.me/" target="_blank">Haotian Fu<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://shreyasraman.netlify.app/" target="_blank">Shreyas S. Raman,</a>
+                  <a href="https://h2r.cs.brown.edu/people/" target="_blank">Stefanie Tellex<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://h2r.cs.brown.edu/people/" target="_blank">Stefanie Tellex,</a>
+                  <a href="https://cs.brown.edu/people/gdk/" target="_blank">George Konidaris<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://cs.brown.edu/people/gdk/" target="_blank">George Konidaris,</a>
+                  <a href="https://davidpaulius.github.io/" target="_blank">David Paulius<sup>1</sup>,</a>
                 </span>
                 <span class="author-block">
-                  <a href="https://davidpaulius.github.io/" target="_blank">David Paulius,</a>
-                </span>
-                <span class="author-block">
-                  <a href="https://www.namanshah.net/" target="_blank">Naman Shah</a>
+                  <a href="https://www.namanshah.net/" target="_blank">Naman Shah<sup>1</sup><sup>2</sup></a>
                 </span>
               </span>
             </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Department of Computer Science, Brown University<br></span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <span class="author-block"><sup>1</sup>Department of Computer Science, Brown University, <sup>2</sup>Allen Institute of AI<br></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -154,20 +151,31 @@
 
 
 <!-- Teaser video-->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
-        <!-- Your video here -->
-        <!-- <source src="static/videos/safety_chip_1080.mp4"
-        type="video/mp4"> -->
-      <!-- </video> -->
-      <!-- <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2> -->
-    <!-- </div>
+      
+      <div class="columns is-centered">
+        
+        <div class="column">
+          <video poster="" id="video1" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/skillwrapper_franka.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column">
+          <video poster="" id="video2" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/skillwrapper_dorfl.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Robot manipulation experiments using Franka and bi-manual Kuka arms.
+      </h2>
+    </div>
   </div>
-</section> -->
+</section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -178,7 +186,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We envision a future where robots are equipped “out of the box” with a library of general-purpose skills. To effectively compose these skills into long-horizon plans, a robot must understand each skill’s preconditions and effects in a form that supports symbolic reasoning. Such representations should be human-interpretable so that robots may understand human commands and humans may understand robot capabilities. Unfortunately, existing approaches to skill abstraction learning often require extensive data collection or human intervention, and typically yield uninterpretable representations. We present SkillWrapper, the first known active learning approach that leverages foundation models to learn human-interpretable abstractions of black-box robot skills, producing representations that are both probabilistically complete and suitable for planning. Given only RGB image observations before and after skill execution, our system actively collects data, invents symbolic predicates, and constructs PDDL-style operators to model the skills. We present preliminary simulation results demonstrating that the abstract representations learned by SkillWrapper can be used to solve previously unseen, long-horizon tasks.
+            Generalizing from individual skill executions to solving long-horizon tasks remains a core challenge in building autonomous robots. A promising direction is learning high-level, symbolic representations of the low-level skills of the robots, enabling reasoning and planning independent of the low-level state space. Recent advances in foundation models have made it possible to generate symbolic predicates that operate on raw sensory inputs—a process we call generative predicate invention—to facilitate downstream representation learning. However, it remains unclear which formal properties the learned representations must satisfy, and how they can be learned to guarantee these properties. In this paper, we address both questions by presenting a formal theory of generative predicate invention for task-level planning, resulting in symbolic operators useful for provably sound and complete planning. We propose SkillWrapper, a method that leverages foundation models to actively collect robot data and learn human-interpretable, plannable representations of black-box skills, using only RGB image observations. Our extensive empirical evaluation in simulation and on real robots shows that SkillWrapper learns abstract representations that enable solving unseen, long-horizon tasks in the real world with black-box skills.
           </p>
         </div>
       </div>
@@ -187,55 +195,25 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item"> -->
-      <!-- Your image here -->
-      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="column">
       <div class="content">
         <h2 class="title is-3">Overview</h2>
       <p>
-        Demonstration of SkillWrapper's functionality.
+        We introduce SkillWrapper, a novel approach that autonomously learns symbolic representations for
+        black-box skills while providing several guarantees such as
+        soundness and completeness (see Appendix B for further
+        theoretical details). To produce a valid abstract model that
+        enables planning, SkillWrapper iterates through a threestep process: (1) actively proposing and executing exploratory
+        skill sequences to collect data on the initiation and termination
+        set of each skill, (2) incrementally building a set of predicates
+        from scratch by contrasting positive and negative examples,
+        and then (3) constructing valid operators using these invented
+        predicates, from which further exploratory skill sequences
+        can be proposed.
       </p>
-      <img src="static/images/fig-skillwrapper_overview-1.png" height="80%">
+      <img src="static/images/fig_SkillWrapper.jpg" height="80%">
       </div>
     </div>
   </div>
@@ -243,163 +221,75 @@
   <div class="container is-max-desktop">
     <div class="column">
       <div class="content">
-        <h2 class="title is-3">Contributions</h2>
+        <h2 class="title is-3">Experiments</h2>
       <p>
-        We present SkillWrapper, a method for learning an abstract model for planning with a library of black-box skills by <i>(1)</i> actively proposing exploratory skill sequences to collect execution traces, <i>(2)</i> inventing predicates by contrasting pairs of successful and failed skill executions, and <i>(3)</i> using these predicates to generate PDDL-style operators compatible by design with off-the-shelf classical AI planners.
+        To demonstrate the applicability of SkillWrapper for realworld robotic settings, we designed two sets of experiments
+        with two robotic platforms: a Franka Emika Panda robot
+        and a bimanual platform with two Kuka
+        iiwa robots. Our results demonstrate that SkillWrapper is effective in
+        real robot settings: our method generalizes skill representations learned in restricted domains to richer environments
+        and progressively improves in more challenging scenarios
+        with irreversible actions and interdependent skills. By outperforming all baseline methods, SkillWrapper highlights
+        the importance of predicate invention and iterative learning
+        to scale symbolic representations to embodied tasks.
       </p>
-      <img src="static/images/fig-skillwrapper_system-1.png" height="80%">
+      
       </div>
     </div>
   </div>
 
-  <!-- <div class="container is-max-desktop">
-    <div class="column">
-      <div class="content">
-        <h2 class="title is-3">NL to LTL translation</h2>
-      <p>
-        We adopted the modular
-        framework of <a href="https://arxiv.org/abs/2302.11649v2" taget="_blank">Lang2LTL</a> as NL to domain-specific
-        LTL formula translator using a predefined vocabulary. This
-        involves extracting referring expressions, grounding referring
-        expressions to propositions within the vocabulary, translating
-        lifted utterances to formulas, and finally producing grounded formulas by replacing placeholders with grounded propositions.
-        The
-        noteworthy distinction is that our translation module relies
-        solely on in-context learning and necessitates no fine-tuning
-        due to the compositionality nature of our approach: the safety
-        constraints are assumed to be provided as a series of basic
-        segments.
-      </p>
-      <img src="static/images/lang2ltl.png" height="100" width="auto">
+  <section class="section">
+  <div class="container is-max-desktop">
+    
+    <div class="columns is-centered is-vcentered is-variable is-3">
+      
+      <div class="column">
+        <div class="card-image">
+          <p class="help has-text-centered">Results of Generalization Experiment in Franka Domain</p>
+          <figure class="image">
+            <img src="static/images/franka_table.png" alt="Description of first image">
+          </figure>
+          
+        </div>
       </div>
-    </div>
-  </div> -->
 
-  <!-- <div class="container is-max-desktop">
-    <div class="column">
-      <div class="content">
-        <h2 class="title is-3">Results</h2>
-      <p>
-        Safety Chip could achieve
-        100% safety rate with expert-verified LTL formulas in
-        both experiments, which significantly outperformed the other
-        baselines, especially under a larger number of constraints.
-        Besides, even without expert verification, there is still a large
-        margin over the other baselines, though the success rate
-        is affected because of the mistranslated safety constraints.
-        On the contrary, the NL Constraints baseline struggles to
-        adhere to the safety constraint even with expert-provided NL
-        constraints.
-      </p>
-      <img src="static/images/vh_result.png" height="80%">
+      <div class="column">
+        <div class="card-image">
+          <figure class="image">
+            <img src="static/images/dorfl_plot.jpg" alt="Description of second image">
+          </figure>
+          <!-- <p class="help has-text-centered">Caption for the second image.</p> -->
+        </div>
       </div>
+
     </div>
+    <!-- <h2 class="subtitle has-text-centered mt-4">
+      An overall title describing both images.
+    </h2> -->
   </div>
-
 </section>
 
 
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Robot Demo</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <p>
-            We deploy the baseline LLM agent with safety chip plugged in on a quadruped robot, and build an indoor environment consisting of 23 objects
-            and landmarks, and the environmental information is stored
-            in the scanned graph from the Spot robot. We define two
-            mobile manipulation tasks with up to ten safety constraints for each, and we progressively increase
-            the number of constraints applied to the task.
-          </p>
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-            <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
-              <source src="static/videos/safety_chip_1080.mp4"
-              type="video/mp4">
-            </video>
-          </div>
-        </div>
+  <div class="container is-max-desktop">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Contributions</h2>
+      <p>
+
+        We highlight the following contributions of SkillWrapper: (1) A formal
+        theory of generative predicate invention for provably sound
+        and complete representations; (2) SkillWrapper, a principled
+        system built on this framework that leverages foundation models to learn interpretable symbolic representations of black-box
+        skills; and (3) an extensive empirical evaluation of the system
+        in simulated and real robotic platforms.
+      </p>
+      
       </div>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
 
+  </section>
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/Safety_Chip_Poster_langrob.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-      @misc{yang2023plug,
-            title={Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents}, 
-            author={Ziyi Yang and Shreyas S. Raman and Ankit Shah and Stefanie Tellex},
-            year={2023},
-            eprint={2309.09919},
-            archivePrefix={arXiv},
-            primaryClass={cs.RO}
-            }
-    </code></pre>
-    </div>
-</section> -->
-<!--End BibTex citation -->
 
 
   <footer class="footer">
